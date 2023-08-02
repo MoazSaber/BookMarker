@@ -8,7 +8,6 @@ var prodLink=document.getElementById('link').value
 /////////////////////////////////////////////////////////
 function addProd() {
      prodname=document.getElementById('prodName').value
-
      prodLink=document.getElementById('link').value
     var prodObject ={
     "prodname" : prodname,
