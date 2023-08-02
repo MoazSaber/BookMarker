@@ -58,14 +58,11 @@ function search(search){
   for(var i=0;i<ProdArray.length;i++){
     if(ProdArray[i].prodname.toLocaleLowerCase().includes(search.toLocaleLowerCase())){
       cartona+=`<tr>
+       <td>${i+1}</td>
       <td>${ProdArray[i].prodname}</td>
-      <td>${ProdArray[i].prodPrice}</td>
-      <td>${ProdArray[i].prodSN}</td>
-      <td>${ProdArray[i].prodDesc}</td>
-      <td>${ProdArray[i].prodlink}</td>
+
       <td>
       <button class="btn btn-info"    onclick="visit(${i})" >Visit</button>
-      <button class="btn btn-warning"    onclick="Update(${i})" >Update</button>
       <button class="btn btn-danger" onclick="Deleteprod(${i})" >Delete</button></td>
     </tr>
       `
