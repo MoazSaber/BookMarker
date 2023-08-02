@@ -29,8 +29,8 @@ function show(){
   var cartona=``;
     for(var i=0;i<ProdArray.length;i++)
     cartona+=`<tr>
-       <td>${i+1}</td>
-    <td>${ProdArray[i].prodname}</td>
+     <td>${i+1}</td>
+     <td>${ProdArray[i].prodname}</td>
     <td>
     <button class="btn btn-info"    onclick="visit(${i})" >Visit</button>
     <button class="btn btn-danger" onclick="Deleteprod(${i})" >Delete</button></td>
