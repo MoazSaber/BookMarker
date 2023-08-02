@@ -1,0 +1,39 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="bootstrap.min.css">
+   <link rel="stylesheet" href="test.css">
+
+</head>
+
+<body>
+
+  <div class="container  shadow-lg my-4 p-5 rounded-4" >
+    <h1 class="text-center" >BookMarker</h1>
+<label for="prodName">Site Name</label>
+    <input id="prodName" type="text" class="form-control my-3 " placeholder="Enter product name">
+    
+    <label for="prodName">Site URL</label>
+    <input class="form-control my-3" placeholder="Site Link" id="link"  type="text">
+    <button onclick="addProd()" id="up"  class="btn btn-info" >Submit</button>
+    <input id="search"  type="text" id="search"  onkeyup="search(this.value)" class="form-control w-50 m-auto" placeholder="Search...">
+  </div>
+
+  <div class="container my-5 shadow">
+    <table class="table table-hover text-center">
+      <thead>
+        <th>Website Name</th>
+        
+        <th>Actions</th>
+      </thead>
+      <tbody id="demo">
+     
+      
+      </tbody>
+    </table>
+    
+  </div>
+ <script src="test.js" ></script>
+</body>
+
+</html>
