@@ -30,6 +30,7 @@ function show(){
   var cartona=``;
     for(var i=0;i<ProdArray.length;i++)
     cartona+=`<tr>
+       <td>${i+1}</td>
     <td>${ProdArray[i].prodname}</td>
 
     <td>
@@ -43,9 +44,6 @@ document.getElementById('demo').innerHTML=cartona
 function clearprod() {
   
    prodname=document.getElementById('prodName').value=""
-   prodPrice=document.getElementById('prodPrice').value=""
-   prodSN =document.getElementById('prodSN').value=""
-   proDesc=document.getElementById('prodDesc').value=""
    prodLink=document.getElementById('link').value=""
 }
 ////////////////////////////////////////////////////////////////
